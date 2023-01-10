@@ -61,8 +61,54 @@
         background-color: red;
         transform: scale(1.25);
     }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo img {
+        width: 10%;
+    }
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+    .nav-links ul a {
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+        font-size: 24px;
+        
+    }
+
+    .nav-links li a:hover {
+        transform: scale(1.1);
+        background-color: lightsalmon;
+        color: white;
+
+    }
+    .nav-links li:hover {
+        transform: scale(1.1);
+
+    }
+  
+
 </style>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="./images/foods.jpg" alt="">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Your Orders</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
     <div class="intro">
         <h1>Reza's Restaurant</h1>
         <p>A taste of real Bangladesh in Germany</p>
@@ -154,5 +200,6 @@
         <button>Order Now</button>
     </div>
    </div>
+</section>
 </body>
 </html>
